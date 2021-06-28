@@ -151,4 +151,4 @@ function reverseString(string) {
   }
   return reversedString = '"' + reversedArray.join(" ") + '"';
 }
-console.log(`10: Should show the reverse of the following string: "${testString}"`, reverseString(testString));
+console.log(`10: Should show the reverse of the following string: "${testString}":`, reverseString(testString));
