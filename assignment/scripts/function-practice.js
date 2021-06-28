@@ -43,15 +43,15 @@ console.log(`4: Should show the result of multiplying the three numbers together
 
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise
-console.log('5:');
+
 function isPositive( number ) {
   return (number > 0 ? true : false)
 }
 // Call the function to test each outcome (true & false)
 // Write a separate console.log statement for each outcome
-console.log( 'isPositive - should say true', isPositive(3) );
-console.log( 'isPositive - should say false', isPositive(0) );
-console.log( 'isPositive - should say false', isPositive(-3) );
+console.log( '5a: isPositive - should say true', isPositive(3) );
+console.log( '5b: isPositive - should say false', isPositive(0) );
+console.log( '5c: isPositive - should say false', isPositive(-3) );
 
 
 // 6. Function to return the _last_ item in an array. If the
@@ -80,7 +80,9 @@ function find( value, array ){
   return match;
 }
 
-console.log(`7: Should return true: `, find(2, testArray));
+console.log(`7a: Should return true: `, find(2, testArray));
+console.log(`7b: Should return false: `, find(10, testArray));
+
 
 // ----------------------
 // Stretch Goals
@@ -88,10 +90,16 @@ console.log(`7: Should return true: `, find(2, testArray));
 // 8. Function to check if a letter is the first letter in a
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
+  let array = string.split("");
+  if (array[0] === letter) {
+    return true;
+  } else {
+    return false;
+  }
 
 }
-console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
-console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
+console.log( '8a: isFirstLetter - should say true', isFirstLetter('a', 'apple') );
+console.log( '8b: isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
 // 9. Function to return the sum of all numbers in an array
 function sumAll( ) {
