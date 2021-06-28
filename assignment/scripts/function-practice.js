@@ -133,3 +133,22 @@ console.log('9: Should return an array containing only positive numbers: ', allP
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
 //     here in a comment, write the function, and test it!
+
+// https://www.codewars.com/kata/51c8991dee245d7ddf00000e
+// Complete the solution so that it reverses all of the words within the string passed in.
+//
+// Example:
+//
+// "The greatest victory is that which requires no battle" --> "battle no requires which that is victory greatest The"
+
+let testString = "The greatest victory is that which requires no battle";
+function reverseString(string) {
+  let wordArray = string.split(" ");
+  let reversedArray = [];
+  let reversedString = "";
+  for (let i = 0; i < wordArray.length; i++) {
+    reversedArray.unshift(wordArray[i]);
+  }
+  return reversedString = '"' + reversedArray.join(" ") + '"';
+}
+console.log(`10: Should show the reverse of the following string: "${testString}"`, reverseString(testString));
