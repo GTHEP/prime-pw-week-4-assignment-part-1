@@ -24,6 +24,7 @@ console.log('2: Should show "Hello, (name)!:',helloName('Garrett'));
 // 3. Function to add two numbers together & return the result
 let numberOne = 5;
 let numberTwo = 7;
+
 function addNumbers(firstNumber, secondNumber) {
   // return firstNumber + secondNumber;
   return firstNumber + secondNumber;
@@ -31,20 +32,20 @@ function addNumbers(firstNumber, secondNumber) {
 console.log(`3: Should show the result of adding two numbers, ${numberOne} and ${numberTwo}:`, addNumbers(numberOne, numberTwo));
 
 // 4. Function to multiply three numbers & return the result
+// I know re-using variables from different questions might not be best practice, but with the current scope I am going to save time and re-use.
 let numberThree = 10;
+
 function multiplyThree(firstNumber, secondNumber, thirdNumber){
   return firstNumber * secondNumber * thirdNumber;
 }
-console.log(`3: Should show the result of multiplying the three numbers together, ${numberOne}, ${numberTwo}, ${numberThree}:`,
+console.log(`4: Should show the result of multiplying the three numbers together, ${numberOne}, ${numberTwo}, and ${numberThree}:`,
   multiplyThree(numberOne, numberTwo, numberThree));
 
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise
+console.log('5:');
 function isPositive( number ) {
-  if ( number > 0 ){
-    return;
-  }
-    return;
+  return (number > 0 ? true : false)
 }
 // Call the function to test each outcome (true & false)
 // Write a separate console.log statement for each outcome
@@ -55,9 +56,12 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
-function getLast( array ) {
+let testArray = [1, 4, 2, 9, 5]
 
+function getLast( array ) {
+  return array[array.length-1];
 }
+console.log(`6: Should show ${testArray[testArray.length - 1]}:`,getLast(testArray));
 
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
