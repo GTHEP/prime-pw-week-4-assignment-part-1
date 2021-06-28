@@ -113,11 +113,22 @@ function sumAll(array) {
   return sum;
 }
 console.log('9: Should show 15:', sumAll(nineArray));
+
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
+let tenArray = [-3, 6, 0, 8, -6, 10, -12, 7];
 
-
+function allPositive(array) {
+  let solution = [];
+  for (x of array) {
+    if (x > 0) {
+      solution.push(x);
+    }
+  }
+  return solution;
+}
+console.log('9: Should return an array containing only positive numbers: ', allPositive(tenArray));
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
