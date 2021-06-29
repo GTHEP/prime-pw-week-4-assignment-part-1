@@ -69,8 +69,8 @@ console.log(`6: Should show ${testArray[testArray.length - 1]}:`,getLast(testArr
 
 function find( value, array ){
   let match;
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] === value){
+  for (x of array) {
+    if (x === value){
       match = true;
       break;
     } else {
