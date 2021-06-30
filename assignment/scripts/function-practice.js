@@ -92,7 +92,7 @@ console.log(`7b: Should return false: `, find(10, testArray));
 function isFirstLetter(letter, string) {
   if (string[0] === letter) {
     return true;
-  } 
+  }
 }
 console.log( '8a: isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( '8b: isFirstLetter - should say false', isFirstLetter('z', 'apple') );
@@ -101,7 +101,7 @@ console.log( '8b: isFirstLetter - should say false', isFirstLetter('z', 'apple')
 let nineArray = [1, 2, 3, 4, 5];
 
 function sumAll(array) {
-  let sum = 0
+  let sum = 0;
   // TODO: loop to add items
   for (x of array) {
     sum += x;
